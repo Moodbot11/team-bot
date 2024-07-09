@@ -1,0 +1,19 @@
+
+# Ignore .env files containing sensitive information
+.env
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+.venv/
+
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore macOS specific files
+.DS_Store
