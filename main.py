@@ -1,7 +1,7 @@
 
-import os
-from flask import Flask, request, jsonify, render_template
-from .env import load_.env
+iimport os
+from flask import Flask, request, jsonify, render_template, send_file
+from dotenv import load_dotenv
 import openai
 import requests
 from io import BytesIO
@@ -10,7 +10,7 @@ from io import BytesIO
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'sk-proj-3cktAm2gcxW3iuLn8iqHT3BlbkFJDCOFoJo7n0lLovXQKCvC'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', '')
 
 DEEPGRAM_API_KEY = os.getenv('DEEPGRAM_API_KEY')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')

@@ -1,4 +1,18 @@
 
+# Ignore .env file
+.env
+
+# Ignore other common files and directories
+__pycache__/
+*.pyc
+instance/
+.pytest_cache/
+.cache/
+
+
+
+
+
 # Ignore .env files containing sensitive information
 .env
 
